@@ -1,4 +1,4 @@
-FROM python:3.9.12
+FROM python:3.13.1
 
 WORKDIR /service
 
@@ -13,4 +13,4 @@ RUN mkdir -p data
 # Add additional dependencies below ...
 RUN pip install -r /service/requirements.txt
 
-ENTRYPOINT [ "python3.9", "/service/main.py" ]
+ENTRYPOINT [ "python3.13", "/service/main.py" ]
